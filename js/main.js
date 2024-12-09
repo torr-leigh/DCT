@@ -13,6 +13,7 @@ https://script.google.com/macros/s/AKfycbwYXiN-TvCUl2gJ1bi1pNrpPJl0dpBZuiP8ZrEP8
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
+        mode: "cors", // Ensure CORS mode
       });
   
       const result = await response.text();
