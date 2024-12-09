@@ -158,46 +158,43 @@
                 <h2>Sleep Quality</h2>
                 <p>How many hours of sleep did you get last night?</p>
                 <form id="sleep-form">
-                  
-                  <!-- Hours of Sleep Dropdown -->
-                  <label for="sleep-hours">Hours of Sleep:</label>
-                  <select id="sleep-hours" name="sleep-hours">
-                    <option value="" disabled selected>Select hours</option>
-                    <script>
-                      for (let i = 1; i <= 12; i += 0.5) {
-                        document.write(`<option value="${i}">${i} hours</option>`);
-                      }
-                    </script>
-                  </select>
-                  
+                                 
                   <!-- Bedtime Dropdown -->
                   <label for="bedtime">Bedtime:</label>
-                  <select id="bedtime" name="bedtime">
+                  <select id="bedtime" name="bedtime" onchange="calculateSleepHours()">
                     <option value="" disabled selected>Select bedtime</option>
                     <script>
                       for (let h = 1; h <= 12; h++) {
-                        ['AM', 'PM'].forEach(ampm => {
-                          document.write(`<option value="${h}:00 ${ampm}">${h}:00 ${ampm}</option>`);
-                          document.write(`<option value="${h}:30 ${ampm}">${h}:30 ${ampm}</option>`);
-                        });
+                        document.write(`<option value="${h}:00 AM">${h}:00 AM</option>`);
+                        document.write(`<option value="${h}:30 AM">${h}:30 AM</option>`);
+                      }
+                      for (let h = 1; h <= 12; h++) {
+                        document.write(`<option value="${h}:00 PM">${h}:00 PM</option>`);
+                        document.write(`<option value="${h}:30 PM">${h}:30 PM</option>`);
                       }
                     </script>
                   </select>
-                  
+
                   <!-- Waketime Dropdown -->
                   <label for="waketime">Waketime:</label>
-                  <select id="waketime" name="waketime">
+                  <select id="waketime" name="waketime" onchange="calculateSleepHours()">
                     <option value="" disabled selected>Select waketime</option>
                     <script>
                       for (let h = 1; h <= 12; h++) {
-                        ['AM', 'PM'].forEach(ampm => {
-                          document.write(`<option value="${h}:00 ${ampm}">${h}:00 ${ampm}</option>`);
-                          document.write(`<option value="${h}:30 ${ampm}">${h}:30 ${ampm}</option>`);
-                        });
+                        document.write(`<option value="${h}:00 AM">${h}:00 AM</option>`);
+                        document.write(`<option value="${h}:30 AM">${h}:30 AM</option>`);
+                      }
+                      for (let h = 1; h <= 12; h++) {
+                        document.write(`<option value="${h}:00 PM">${h}:00 PM</option>`);
+                        document.write(`<option value="${h}:30 PM">${h}:30 PM</option>`);
                       }
                     </script>
                   </select>
-              
+
+                  <!-- Display Hours of Sleep -->
+                  <h1 id="sleep-hours-display">Hours of Sleep: </h1>
+
+
                 </form>
               </section>
               
@@ -207,58 +204,58 @@
                 <form id="gad7-form">
                   <div class="gad7-question">
                     <p>1. Feeling nervous, anxious, or on edge</p>
-                    <label><input type="radio" name="q1" value="0"> Not at all</label>
-                    <label><input type="radio" name="q1" value="1"> Several days</label>
-                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="gad7_q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="gad7_q1" value="1"> Several days</label>
+                    <label><input type="radio" name="gad7_q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="gad7_q1" value="3"> Nearly every day</label>
                   </div>
               
                   <div class="gad7-question">
                     <p>2. Not being able to stop or control worrying</p>
-                    <label><input type="radio" name="q2" value="0"> Not at all</label>
-                    <label><input type="radio" name="q2" value="1"> Several days</label>
-                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="gad7_q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="gad7_q2" value="1"> Several days</label>
+                    <label><input type="radio" name="gad7_q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="gad7_q2" value="3"> Nearly every day</label>
                   </div>
 
                   <div class="gad7-question">
                     <p>3. Worrying too much about different things</p>
-                    <label><input type="radio" name="q1" value="0"> Not at all</label>
-                    <label><input type="radio" name="q1" value="1"> Several days</label>
-                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="gad7_q3" value="0"> Not at all</label>
+                    <label><input type="radio" name="gad7_q3" value="1"> Several days</label>
+                    <label><input type="radio" name="gad7_q3" value="2"> More than half the days</label>
+                    <label><input type="radio" name="gad7_q3" value="3"> Nearly every day</label>
                   </div>
               
                   <div class="gad7-question">
                     <p>4. Trouble relaxing</p>
-                    <label><input type="radio" name="q2" value="0"> Not at all</label>
-                    <label><input type="radio" name="q2" value="1"> Several days</label>
-                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="gad7_q4" value="0"> Not at all</label>
+                    <label><input type="radio" name="gad7_q4" value="1"> Several days</label>
+                    <label><input type="radio" name="gad7_q4" value="2"> More than half the days</label>
+                    <label><input type="radio" name="gad7_q4" value="3"> Nearly every day</label>
                   </div>
 
                   <div class="gad7-question">
                     <p>5. Being so restless that it is hard to sit still</p>
-                    <label><input type="radio" name="q2" value="0"> Not at all</label>
-                    <label><input type="radio" name="q2" value="1"> Several days</label>
-                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="gad7_q5" value="0"> Not at all</label>
+                    <label><input type="radio" name="gad7_q5" value="1"> Several days</label>
+                    <label><input type="radio" name="gad7_q5" value="2"> More than half the days</label>
+                    <label><input type="radio" name="gad7_q5" value="3"> Nearly every day</label>
                   </div>
 
                   <div class="gad7-question">
                     <p>6. Becoming easily annoyed or irritable</p>
-                    <label><input type="radio" name="q1" value="0"> Not at all</label>
-                    <label><input type="radio" name="q1" value="1"> Several days</label>
-                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="gad7_q6" value="0"> Not at all</label>
+                    <label><input type="radio" name="gad7_q6" value="1"> Several days</label>
+                    <label><input type="radio" name="gad7_q6" value="2"> More than half the days</label>
+                    <label><input type="radio" name="gad7_q6" value="3"> Nearly every day</label>
                   </div>
               
                   <div class="gad7-question">
                     <p>7. Feeling afraid, as if something awful might happen</p>
-                    <label><input type="radio" name="q2" value="0"> Not at all</label>
-                    <label><input type="radio" name="q2" value="1"> Several days</label>
-                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="gad7_q7" value="0"> Not at all</label>
+                    <label><input type="radio" name="gad7_q7" value="1"> Several days</label>
+                    <label><input type="radio" name="gad7_q7" value="2"> More than half the days</label>
+                    <label><input type="radio" name="gad7_q7" value="3"> Nearly every day</label>
                   </div>
               
                   <!-- Repeat for all 7 questions 
@@ -284,74 +281,74 @@
                 <form id="phq9-form">
                   <div class="phq9-question">
                     <p>1. Little interest or pleasure in doing things</p>
-                    <label><input type="radio" name="q1" value="0"> Not at all</label>
-                    <label><input type="radio" name="q1" value="1"> Several days</label>
-                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="phq9_q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="phq9_q1" value="1"> Several days</label>
+                    <label><input type="radio" name="phq9_q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="phq9_q1" value="3"> Nearly every day</label>
                   </div>
               
                   <div class="phq9-question">
                     <p>2. Feeling down, depressed, or hopeless</p>
-                    <label><input type="radio" name="q2" value="0"> Not at all</label>
-                    <label><input type="radio" name="q2" value="1"> Several days</label>
-                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="phq9_q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="phq9_q2" value="1"> Several days</label>
+                    <label><input type="radio" name="phq9_q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="phq9_q2" value="3"> Nearly every day</label>
                   </div>
 
                   <div class="phq9-question">
                     <p>3. Trouble falling or staying asleep, or sleeping too much</p>
-                    <label><input type="radio" name="q1" value="0"> Not at all</label>
-                    <label><input type="radio" name="q1" value="1"> Several days</label>
-                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="phq9_q3" value="0"> Not at all</label>
+                    <label><input type="radio" name="phq9_q3" value="1"> Several days</label>
+                    <label><input type="radio" name="phq9_q3" value="2"> More than half the days</label>
+                    <label><input type="radio" name="phq9_q3" value="3"> Nearly every day</label>
                   </div>
               
                   <div class="phq9-question">
                     <p>4. Feeling tired or having little energy</p>
-                    <label><input type="radio" name="q2" value="0"> Not at all</label>
-                    <label><input type="radio" name="q2" value="1"> Several days</label>
-                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="phq9_q4" value="0"> Not at all</label>
+                    <label><input type="radio" name="phq9_q4" value="1"> Several days</label>
+                    <label><input type="radio" name="phq9_q4" value="2"> More than half the days</label>
+                    <label><input type="radio" name="phq9_q4" value="3"> Nearly every day</label>
                   </div>
 
                   <div class="phq9-question">
                     <p>5. Poor appetite or overeating</p>
-                    <label><input type="radio" name="q1" value="0"> Not at all</label>
-                    <label><input type="radio" name="q1" value="1"> Several days</label>
-                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="phq9_q5" value="0"> Not at all</label>
+                    <label><input type="radio" name="phq9_q5" value="1"> Several days</label>
+                    <label><input type="radio" name="phq9_q5" value="2"> More than half the days</label>
+                    <label><input type="radio" name="phq9_q5" value="3"> Nearly every day</label>
                   </div>
               
                   <div class="phq9-question">
                     <p>6. Feeling bad about yourself or that you are a failure or have let yourself or your family down</p>
-                    <label><input type="radio" name="q2" value="0"> Not at all</label>
-                    <label><input type="radio" name="q2" value="1"> Several days</label>
-                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="phq9_q6" value="0"> Not at all</label>
+                    <label><input type="radio" name="phq9_q6" value="1"> Several days</label>
+                    <label><input type="radio" name="phq9_q6" value="2"> More than half the days</label>
+                    <label><input type="radio" name="phq9_q6" value="3"> Nearly every day</label>
                   </div>
 
                   <div class="phq9-question">
                     <p>7. Trouble concentrating on things, such as reading the newspaper or watching television</p>
-                    <label><input type="radio" name="q1" value="0"> Not at all</label>
-                    <label><input type="radio" name="q1" value="1"> Several days</label>
-                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="phq9_q7" value="0"> Not at all</label>
+                    <label><input type="radio" name="phq9_q7" value="1"> Several days</label>
+                    <label><input type="radio" name="phq9_q7" value="2"> More than half the days</label>
+                    <label><input type="radio" name="phq9_q7" value="3"> Nearly every day</label>
                   </div>
               
                   <div class="phq9-question">
                     <p>8. Moving or speaking so slowly that other people could have noticed. Or the opposite being so fidgety or restless that you have been moving around a lot more than usual</p>
-                    <label><input type="radio" name="q2" value="0"> Not at all</label>
-                    <label><input type="radio" name="q2" value="1"> Several days</label>
-                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="phq9_q8" value="0"> Not at all</label>
+                    <label><input type="radio" name="phq9_q8" value="1"> Several days</label>
+                    <label><input type="radio" name="phq9_q8" value="2"> More than half the days</label>
+                    <label><input type="radio" name="phq9_q8" value="3"> Nearly every day</label>
                   </div>
 
                   <div class="phq9-question">
                     <p>9. Thoughts that you would be better off dead, or of hurting yourself</p>
-                    <label><input type="radio" name="q1" value="0"> Not at all</label>
-                    <label><input type="radio" name="q1" value="1"> Several days</label>
-                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
-                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                    <label><input type="radio" name="phq9_q9" value="0"> Not at all</label>
+                    <label><input type="radio" name="phq9_q9" value="1"> Several days</label>
+                    <label><input type="radio" name="phq9_q9" value="2"> More than half the days</label>
+                    <label><input type="radio" name="phq9_q9" value="3"> Nearly every day</label>
                   </div>
               
                   <!-- Repeat for all 9 questions
