@@ -1,5 +1,5 @@
-/* async function submitDataToSheets(data) {
-    const url = "https://script.google.com/macros/s/AKfycbzOzriMEPPNI0Bbs1xV053GOwnDYEeQMfGm6gl526NHEZ-3UNw42JpPpoVThZlZTp6E/exec"; // Replace with your Web App URL
+async function submitDataToSheets(data) {
+    const url = "https://script.google.com/macros/s/AKfycbzdIbp-sA5TDBqDL0BBOqwsXeP1ksgBMfftl5Hcii1c2S-H2KOz4-7QzWlsIH_45bp8/exec"; // Replace with your Web App URL
   
     try {
       const response = await fetch(url, {
@@ -49,7 +49,7 @@ function calculateGAD7() {
     // Gather Sleep Data
     const bedtime = document.getElementById('bedtime').value || '';
     const waketime = document.getElementById('waketime').value || '';
-    const hoursSleep = document.getElementById('sleep-hours').value || '';
+    const hoursSleep = calculateSleepHours();
 
     // Gather GAD-7 Data
     let gad7Score = 0;
@@ -127,8 +127,8 @@ function calculateGAD7() {
     date.setHours(hours, minutes, 0, 0);
     return date;
   }
-   */
-
+  
+/*
  // Function to calculate hours of sleep
 function calculateSleepHours() {
   const bedtime = document.getElementById('bedtime').value;
@@ -241,3 +241,4 @@ async function submitDataToSheets(data) {
   }
 }
  
+*/
