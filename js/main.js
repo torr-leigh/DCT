@@ -1,10 +1,10 @@
 console.log("JavaScript file loaded successfully!");
 
 async function submitDataToSheets(data) {
-    const url = "https://script.google.com/macros/s/AKfycbx91DukcOKsWU9uKMLm7mWD4vv55yYfSKrH9wFWvakG6AWy5haNmUNtCjdO9J3VYc_j/exec"; // Replace with your Web App URL
+    const url = "https://script.google.com/macros/s/AKfycbwYXiN-TvCUl2gJ1bi1pNrpPJl0dpBZuiP8ZrEP8IXMSvaJPvl63ic09NgRg2eX_Csf/exec"; // Replace with your Web App URL
     
     /*
-https://script.google.com/macros/s/AKfycbx91DukcOKsWU9uKMLm7mWD4vv55yYfSKrH9wFWvakG6AWy5haNmUNtCjdO9J3VYc_j/exec
+https://script.google.com/macros/s/AKfycbwYXiN-TvCUl2gJ1bi1pNrpPJl0dpBZuiP8ZrEP8IXMSvaJPvl63ic09NgRg2eX_Csf/exec
     */
     console.log("Submitting data to Google Sheets:", data); // Debugging statement
     
