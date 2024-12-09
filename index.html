@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+
+        <!--[if IE<9]>
+            <link rel="stylesheet" href="css/style.ie.css">
+        <![endif]-->
+
+         <!--you can also place internal styles here;
+             place these within <style> tags-->
+        
+    </head>
+
+    <body>
+        <!--put your initial page content here-->
+        <form id="daily-dashboard-form">
+        <section id="mood-section">
+            <h2>Mood</h2>
+            <h3>How do you feel today? (Check all that apply)</p>
+            <form id="mood-form">
+              <div class="mood-container">
+            
+                <!-- Positive Moods -->
+                <div class="mood-category">
+                  <div class="mood-list">
+                    <label><input type="checkbox" name="mood" value="Happy"> Happy</label>
+                    <label><input type="checkbox" name="mood" value="Joy"> Joy</label>
+                    <label><input type="checkbox" name="mood" value="Ecstasy"> Ecstasy</label>
+                    <label><input type="checkbox" name="mood" value="Serenity"> Serenity</label>
+                    <label><input type="checkbox" name="mood" value="Love"> Love</label>
+                    <label><input type="checkbox" name="mood" value="Optimism"> Optimism</label>
+                    <label><input type="checkbox" name="mood" value="Trust"> Trust</label>
+                    <label><input type="checkbox" name="mood" value="Admiration"> Admiration</label>
+                    <label><input type="checkbox" name="mood" value="Acceptance"> Acceptance</label>
+                    <label><input type="checkbox" name="mood" value="Anticipation"> Anticipation</label>
+                    <label><input type="checkbox" name="mood" value="Delight"> Delight</label>
+                    <label><input type="checkbox" name="mood" value="Gratitude"> Gratitude</label>
+                    <label><input type="checkbox" name="mood" value="Appreciation"> Appreciation</label>
+                    <label><input type="checkbox" name="mood" value="Contentment"> Contentment</label>
+                    <label><input type="checkbox" name="mood" value="Satisfaction"> Satisfaction</label>
+                    <label><input type="checkbox" name="mood" value="Fulfilled"> Fulfilled</label>
+                    <label><input type="checkbox" name="mood" value="Happiness"> Happiness</label>
+                    <label><input type="checkbox" name="mood" value="Pride"> Pride</label>
+                    <label><input type="checkbox" name="mood" value="Inspired"> Inspired</label>
+                    <label><input type="checkbox" name="mood" value="Inspiration"> Inspiration</label>
+                    <label><input type="checkbox" name="mood" value="Excitement"> Excitement</label>
+                    <label><input type="checkbox" name="mood" value="Joyful"> Joyful</label>
+                    <label><input type="checkbox" name="mood" value="Thrilled"> Thrilled</label>
+                    <label><input type="checkbox" name="mood" value="Exhilarated"> Exhilarated</label>
+                    <label><input type="checkbox" name="mood" value="Giddy"> Giddy</label>
+                    <label><input type="checkbox" name="mood" value="Eager"> Eager</label>
+                    <label><input type="checkbox" name="mood" value="Passionate"> Passionate</label>
+                    <label><input type="checkbox" name="mood" value="Adventurous"> Adventurous</label>
+                    <label><input type="checkbox" name="mood" value="Hope"> Hope</label>
+                    <label><input type="checkbox" name="mood" value="Heartened"> Heartened</label>
+                    <label><input type="checkbox" name="mood" value="Curious"> Curious</label>
+                    <label><input type="checkbox" name="mood" value="Interest"> Interest</label>
+                    <label><input type="checkbox" name="mood" value="Amazement"> Amazement</label>
+                    <label><input type="checkbox" name="mood" value="Awe"> Awe</label>
+                    <label><input type="checkbox" name="mood" value="Elated"> Elated</label>
+                    <label><input type="checkbox" name="mood" value="Energetic"> Energetic</label>
+                    <label><input type="checkbox" name="mood" value="Vigorous"> Vigorous</label>
+                    <label><input type="checkbox" name="mood" value="Confident"> Confident</label>
+                    <label><input type="checkbox" name="mood" value="Empowered"> Empowered</label>
+                    <label><input type="checkbox" name="mood" value="Alert"> Alert</label>
+                    <label><input type="checkbox" name="mood" value="Clear headed"> Clear headed</label>
+                    <label><input type="checkbox" name="mood" value="Focused"> Focused</label>
+                    <label><input type="checkbox" name="mood" value="Alive"> Alive</label>
+                    <label><input type="checkbox" name="mood" value="Healthy"> Healthy</label>
+                    <label><input type="checkbox" name="mood" value="Safe"> Safe</label>
+                    <label><input type="checkbox" name="mood" value="Relaxed"> Relaxed</label>
+                    <label><input type="checkbox" name="mood" value="Calm"> Calm</label>
+                    <label><input type="checkbox" name="mood" value="Peaceful"> Peaceful</label>
+                    <label><input type="checkbox" name="mood" value="Mellow"> Mellow</label>
+                    <label><input type="checkbox" name="mood" value="At ease"> At ease</label>
+                    <label><input type="checkbox" name="mood" value="Serene"> Serene</label>
+                    <label><input type="checkbox" name="mood" value="Tranquil"> Tranquil</label>
+                    <label><input type="checkbox" name="mood" value="Affectionate"> Affectionate</label>
+                    <label><input type="checkbox" name="mood" value="Loving"> Loving</label>
+                    <label><input type="checkbox" name="mood" value="Friendly"> Friendly</label>
+                    <label><input type="checkbox" name="mood" value="Comfortable"> Comfortable</label>                      <label><input type="checkbox" name="mood" value="Rested"> Rested</label>
+                    <label><input type="checkbox" name="mood" value="Restless"> Restless</label>
+                    <label><input type="checkbox" name="mood" value="Concerned"> Concerned</label>
+                    <label><input type="checkbox" name="mood" value="Apprehensive"> Apprehensive</label>
+                    <label><input type="checkbox" name="mood" value="Nervousness"> Nervousness</label>
+                    <label><input type="checkbox" name="mood" value="Worried"> Worried</label>
+                    <label><input type="checkbox" name="mood" value="Curious"> Curious</label>
+                    <label><input type="checkbox" name="mood" value="Ambivalent"> Ambivalent</label>
+                    <label><input type="checkbox" name="mood" value="Disconnected"> Disconnected</label>
+                    <label><input type="checkbox" name="mood" value="Detached"> Detached</label>
+                    <label><input type="checkbox" name="mood" value="Defensive"> Defensive</label>
+                    <label><input type="checkbox" name="mood" value="Irritated"> Irritated</label>
+                    <label><input type="checkbox" name="mood" value="Annoyance"> Annoyance</label>
+                    <label><input type="checkbox" name="mood" value="Cranky"> Cranky</label>
+                    <label><input type="checkbox" name="mood" value="Boredom"> Boredom</label>
+                    <label><input type="checkbox" name="mood" value="Tired"> Tired</label>
+                    <label><input type="checkbox" name="mood" value="Disoriented"> Disoriented</label>
+                    <label><input type="checkbox" name="mood" value="Confused"> Confused</label>
+                    <label><input type="checkbox" name="mood" value="Exhausted"> Exhausted</label>
+                    <label><input type="checkbox" name="mood" value="Burnt Out"> Burnt Out</label>
+                    <label><input type="checkbox" name="mood" value="Torn"> Torn</label>
+                    <label><input type="checkbox" name="mood" value="Jealous"> Jealous</label>
+                    <label><input type="checkbox" name="mood" value="Envious"> Envious</label>
+                    <label><input type="checkbox" name="mood" value="Bitter"> Bitter</label>
+                    <label><input type="checkbox" name="mood" value="Impatient"> Impatient</label>
+                    <label><input type="checkbox" name="mood" value="Frustrated"> Frustrated</label>
+                    <label><input type="checkbox" name="mood" value="Discouraged"> Discouraged</label>
+                    <label><input type="checkbox" name="mood" value="Disheartened"> Disheartened</label>
+                    <label><input type="checkbox" name="mood" value="Disappointed"> Disappointed</label>
+                    <label><input type="checkbox" name="mood" value="Resentful"> Resentful</label>
+                    <label><input type="checkbox" name="mood" value="Alarmed"> Alarmed</label>
+                    <label><input type="checkbox" name="mood" value="Stressed"> Stressed</label>
+                    <label><input type="checkbox" name="mood" value="Agitated"> Agitated</label>
+                    <label><input type="checkbox" name="mood" value="Angry"> Angry</label>
+                    <label><input type="checkbox" name="mood" value="Sullen"> Sullen</label>
+                    <label><input type="checkbox" name="mood" value="Downhearted"> Downhearted</label>
+                    <label><input type="checkbox" name="mood" value="Melancholy"> Melancholy</label>
+                    <label><input type="checkbox" name="mood" value="Pensiveness"> Pensiveness</label>
+                    <label><input type="checkbox" name="mood" value="Sadness"> Sadness</label>
+                    <label><input type="checkbox" name="mood" value="Lonely"> Lonely</label>
+                    <label><input type="checkbox" name="mood" value="Fear"> Fear</label>
+                    <label><input type="checkbox" name="mood" value="Anxiety"> Anxiety</label>
+                    <label><input type="checkbox" name="mood" value="Panicky"> Panicky</label>
+                    <label><input type="checkbox" name="mood" value="Scared"> Scared</label>
+                    <label><input type="checkbox" name="mood" value="Dread"> Dread</label>
+                    <label><input type="checkbox" name="mood" value="Vulnerable"> Vulnerable</label>
+                    <label><input type="checkbox" name="mood" value="Hurt"> Hurt</label>
+                    <label><input type="checkbox" name="mood" value="Distressed"> Distressed</label>
+                    <label><input type="checkbox" name="mood" value="Shocked"> Shocked</label>
+                    <label><input type="checkbox" name="mood" value="Horrified"> Horrified</label>
+                    <label><input type="checkbox" name="mood" value="Terrified"> Terrified</label>
+                    <label><input type="checkbox" name="mood" value="Anguish"> Anguish</label>
+                    <label><input type="checkbox" name="mood" value="Grief"> Grief</label>
+                    <label><input type="checkbox" name="mood" value="Hopeless"> Hopeless</label>
+                    <label><input type="checkbox" name="mood" value="Depressed"> Depressed</label>
+                    <label><input type="checkbox" name="mood" value="Rage"> Rage</label>
+                    <label><input type="checkbox" name="mood" value="Loathing"> Loathing</label>
+                    <label><input type="checkbox" name="mood" value="Disgust"> Disgust</label>
+                    <label><input type="checkbox" name="mood" value="Guilt"> Guilt</label>
+                    <label><input type="checkbox" name="mood" value="Shame"> Shame</label>
+                    <label><input type="checkbox" name="mood" value="Embarrassment"> Embarrassment</label>
+                    </div>
+                  </div>
+            
+                </div>
+              </form>
+            </section>
+
+
+            <section id="sleep-section">
+                <h2>Sleep Quality</h2>
+                <p>How many hours of sleep did you get last night?</p>
+                <form id="sleep-form">
+                  
+                  <!-- Hours of Sleep Dropdown -->
+                  <label for="sleep-hours">Hours of Sleep:</label>
+                  <select id="sleep-hours" name="sleep-hours">
+                    <option value="" disabled selected>Select hours</option>
+                    <script>
+                      for (let i = 1; i <= 12; i += 0.5) {
+                        document.write(`<option value="${i}">${i} hours</option>`);
+                      }
+                    </script>
+                  </select>
+                  
+                  <!-- Bedtime Dropdown -->
+                  <label for="bedtime">Bedtime:</label>
+                  <select id="bedtime" name="bedtime">
+                    <option value="" disabled selected>Select bedtime</option>
+                    <script>
+                      for (let h = 1; h <= 12; h++) {
+                        ['AM', 'PM'].forEach(ampm => {
+                          document.write(`<option value="${h}:00 ${ampm}">${h}:00 ${ampm}</option>`);
+                          document.write(`<option value="${h}:30 ${ampm}">${h}:30 ${ampm}</option>`);
+                        });
+                      }
+                    </script>
+                  </select>
+                  
+                  <!-- Waketime Dropdown -->
+                  <label for="waketime">Waketime:</label>
+                  <select id="waketime" name="waketime">
+                    <option value="" disabled selected>Select waketime</option>
+                    <script>
+                      for (let h = 1; h <= 12; h++) {
+                        ['AM', 'PM'].forEach(ampm => {
+                          document.write(`<option value="${h}:00 ${ampm}">${h}:00 ${ampm}</option>`);
+                          document.write(`<option value="${h}:30 ${ampm}">${h}:30 ${ampm}</option>`);
+                        });
+                      }
+                    </script>
+                  </select>
+              
+                </form>
+              </section>
+              
+              <section id="gad7-section">
+                <h2>GAD-7 Anxiety Screening</h2>
+                <p>Over the last 2 weeks, how often have you been bothered by the following problems?</p>
+                <form id="gad7-form">
+                  <div class="gad7-question">
+                    <p>1. Feeling nervous, anxious, or on edge</p>
+                    <label><input type="radio" name="q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="q1" value="1"> Several days</label>
+                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                  </div>
+              
+                  <div class="gad7-question">
+                    <p>2. Not being able to stop or control worrying</p>
+                    <label><input type="radio" name="q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="q2" value="1"> Several days</label>
+                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                  </div>
+
+                  <div class="gad7-question">
+                    <p>3. Worrying too much about different things</p>
+                    <label><input type="radio" name="q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="q1" value="1"> Several days</label>
+                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                  </div>
+              
+                  <div class="gad7-question">
+                    <p>4. Trouble relaxing</p>
+                    <label><input type="radio" name="q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="q2" value="1"> Several days</label>
+                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                  </div>
+
+                  <div class="gad7-question">
+                    <p>5. Being so restless that it is hard to sit still</p>
+                    <label><input type="radio" name="q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="q2" value="1"> Several days</label>
+                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                  </div>
+
+                  <div class="gad7-question">
+                    <p>6. Becoming easily annoyed or irritable</p>
+                    <label><input type="radio" name="q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="q1" value="1"> Several days</label>
+                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                  </div>
+              
+                  <div class="gad7-question">
+                    <p>7. Feeling afraid, as if something awful might happen</p>
+                    <label><input type="radio" name="q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="q2" value="1"> Several days</label>
+                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                  </div>
+              
+                  <!-- Repeat for all 7 questions 
+                   Feeling nervous, anxious, or on edge   
+                    Not being able to stop or control worrying   
+                    Worrying too much about different things   
+                    Trouble relaxing   
+                    Being so restless that it is hard to sit still   
+                    Becoming easily annoyed or irritable   
+                    Feeling afraid, as if something awful might happen  
+                    -->
+
+
+              
+                  <button type="button" onclick="calculateGAD7()">Submit</button>
+                  <p id="gad7-result"></p>
+                </form>
+              </section>
+
+              <section id="phq9-section">
+                <h2>PHQ-9 Depression Screening</h2>
+                <p>Over the last 2 weeks, how often have you been bothered by the following problems?</p>
+                <form id="phq9-form">
+                  <div class="phq9-question">
+                    <p>1. Little interest or pleasure in doing things</p>
+                    <label><input type="radio" name="q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="q1" value="1"> Several days</label>
+                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                  </div>
+              
+                  <div class="phq9-question">
+                    <p>2. Feeling down, depressed, or hopeless</p>
+                    <label><input type="radio" name="q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="q2" value="1"> Several days</label>
+                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                  </div>
+
+                  <div class="phq9-question">
+                    <p>3. Trouble falling or staying asleep, or sleeping too much</p>
+                    <label><input type="radio" name="q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="q1" value="1"> Several days</label>
+                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                  </div>
+              
+                  <div class="phq9-question">
+                    <p>4. Feeling tired or having little energy</p>
+                    <label><input type="radio" name="q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="q2" value="1"> Several days</label>
+                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                  </div>
+
+                  <div class="phq9-question">
+                    <p>5. Poor appetite or overeating</p>
+                    <label><input type="radio" name="q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="q1" value="1"> Several days</label>
+                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                  </div>
+              
+                  <div class="phq9-question">
+                    <p>6. Feeling bad about yourself or that you are a failure or have let yourself or your family down</p>
+                    <label><input type="radio" name="q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="q2" value="1"> Several days</label>
+                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                  </div>
+
+                  <div class="phq9-question">
+                    <p>7. Trouble concentrating on things, such as reading the newspaper or watching television</p>
+                    <label><input type="radio" name="q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="q1" value="1"> Several days</label>
+                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                  </div>
+              
+                  <div class="phq9-question">
+                    <p>8. Moving or speaking so slowly that other people could have noticed. Or the opposite being so fidgety or restless that you have been moving around a lot more than usual</p>
+                    <label><input type="radio" name="q2" value="0"> Not at all</label>
+                    <label><input type="radio" name="q2" value="1"> Several days</label>
+                    <label><input type="radio" name="q2" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+                  </div>
+
+                  <div class="phq9-question">
+                    <p>9. Thoughts that you would be better off dead, or of hurting yourself</p>
+                    <label><input type="radio" name="q1" value="0"> Not at all</label>
+                    <label><input type="radio" name="q1" value="1"> Several days</label>
+                    <label><input type="radio" name="q1" value="2"> More than half the days</label>
+                    <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+                  </div>
+              
+                  <!-- Repeat for all 9 questions
+                   1. Little interest or pleasure in doing things 
+                   2. Feeling down, depressed, or hopeless 
+                   3. Trouble falling or staying asleep, or sleeping too much 
+                   4. Feeling tired or having little energy 
+                   5. Poor appetite or overeating 
+                   6. Feeling bad about yourself or that you are a failure or have let yourself or your family down 
+                   7. Trouble concentrating on things, such as reading the newspaper or watching television 
+                   8. Moving or speaking so slowly that other people could have noticed. 
+                        Or the opposite being so fidgety or restless that you have been moving around a lot more than usual 
+                   9.Thoughts that you would be better off dead, or of hurting yourself
+                    -->
+              
+                  <button type="button" onclick="calculatePHQ9()">Submit</button>
+                  <p id="phq9-result"></p>
+                </form>
+              </section>
+
+        <!-- Submit Button for the Entire Form -->
+        <button type="submit" id="submit-button">Submit</button>
+        </form>
+              
+              
+          
+        <!--you can also use this space for internal scripts;
+        place these within <script> tags-->
+
+        <!--put your external script links here-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

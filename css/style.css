@@ -1,0 +1,139 @@
+body {
+    font-family: 'Spectral', serif;
+  }
+  
+
+#mood-section {
+    margin: 20px;
+    padding: 20px;              /* Adds space inside the box */
+    border: 2px solid #ccc;     /* Creates the border */
+    border-radius: 15px;        /* Rounds the corners */
+    background-color: #f9f9f9;  /* Optional: Light background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  }
+  
+  
+  h2 {
+    color: #444;
+  }
+  
+  p {
+    margin-bottom: 0px;
+  }
+  
+/* Style for the mood container */
+.mood-container {
+    display: flex;
+    justify-content: left;
+  }
+  
+  /* Two-column grid layout for the mood list */
+  .mood-list {
+    display: grid;
+    grid-template-rows: repeat(15, auto); /* Adjust the number of rows as needed */
+    grid-auto-flow: column;               /* Fills items vertically first, then moves to the next column */
+    gap: 0px;                            /* Space between the items */
+  }
+  
+  /* General styling for labels */
+  .mood-list label {
+    font-size: 14px;
+    display: block;
+  }
+  
+  #sleep-section {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#sleep-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#sleep-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#sleep-form select {
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+section {
+
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: left;
+    color: #444;
+  }
+  
+  p {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .gad7-question, .phq9-question {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+
+  
+/* Style for each question */
+.gad7-question {
+    margin-bottom: 20px;
+  }
+  
+  /* Display radio buttons horizontally */
+  .gad7-question label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; /* Adds spacing between options */
+    cursor: pointer;
+  }
+  
+  /* Optional: Add spacing between the question text and the options */
+  .gad7-question p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #gad7-result, #phq9-result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
