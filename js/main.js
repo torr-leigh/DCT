@@ -1,6 +1,8 @@
 async function submitDataToSheets(data) {
     const url = "https://script.google.com/macros/s/AKfycbzdIbp-sA5TDBqDL0BBOqwsXeP1ksgBMfftl5Hcii1c2S-H2KOz4-7QzWlsIH_45bp8/exec"; // Replace with your Web App URL
-  
+    
+    console.log("Submitting data to Google Sheets:", data); // Debugging statement
+    
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -9,9 +11,11 @@ async function submitDataToSheets(data) {
       });
   
       const result = await response.text();
+      console.log("Response from Google Apps Script:", result); // Debugging statement
       console.log(result); // "Success" if the submission worked
     } catch (error) {
       console.error("Error:", error);
+      alert("There was an error submitting the data.");
     }
   }
   
